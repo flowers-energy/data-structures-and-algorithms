@@ -25,8 +25,11 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-
-  // Solution code here...
+  const returnArray = [];
+  arr.forEach(item => {
+    returnArray.push(item + '!');
+  });
+  return returnArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,9 +40,9 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
 
-const allUpperCase = (arr) => {
+function allUpperCase(arr) {
   // Solution code here...
-};
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
