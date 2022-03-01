@@ -40,9 +40,14 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
 
-function allUpperCase(arr) {
-  // Solution code here...
-}
+const allUpperCase = (arr) => {
+  const caseArray = [];
+  arr.forEach(item => {
+    caseArray.push(item.toUpperCase());
+  });
+  return caseArray;
+};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -55,12 +60,22 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+  return word.toUpperCase() + '!';
 };
 
-const speaker = (words, callback) => {
-  // Solution code here...
+
+const speaker = (greetArr, callback) => {
+  const greetArray = [];
+  greetArr.forEach(hi => {
+    greetArray.push(callback(hi));
+  });
+  return greetArray;
 };
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
