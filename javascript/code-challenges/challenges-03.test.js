@@ -25,11 +25,10 @@ Write a function named typeNum that, given an array as input, uses filter to ret
 For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
-const typeNum = (arr) => {
-  return arr.filter(num => typeof num === 'number');
+const typeNum = (arr) => arr.filter(num => typeof num === 'number');
 
 
-};
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -38,9 +37,8 @@ Write a function named containsAnd that, given an array of strings as input, use
 For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
-const containsAnd = (arr) => {
-  return arr.filter(str => str.includes('and'));
-};
+const containsAnd = (arr) => arr.filter(str => str.includes('and'));
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -50,9 +48,8 @@ Write a function named oddValues that, given an array of integers as input, uses
 For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
-const oddValues = (arr) => {
-  return arr.filter(num => num % 2);
-};
+const oddValues = (arr) => arr.filter(num => num % 2);
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -61,10 +58,9 @@ Write a function named notInFirstArray that, given two arrays as input, uses fil
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
-const notInFirstArray = (forbiddenValues, arr) => {
-  return arr.filter(arr => arr !== forbiddenValues);
+const notInFirstArray = (forbiddenValues, arr) => arr.filter(value => !forbiddenValues.includes(value));
 
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
