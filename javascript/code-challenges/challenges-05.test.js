@@ -17,7 +17,7 @@ const toLastNames = people => {
   return peopleArr;
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* ---------------------------------------------om start---------------------------------------------------
 CHALLENGE 2
 
 Write a function named addValues that, given an array of numbers as input, uses reduce to add the values in the array.
@@ -54,8 +54,16 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
+  var counter = 0
+  const arrCount =arr.reduce(acc, curr) {
+    if (acc == item); {
+      counter ++;
+    }
+    return acc;
+    }, 0);
+return item;
   // Solution code here...
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
