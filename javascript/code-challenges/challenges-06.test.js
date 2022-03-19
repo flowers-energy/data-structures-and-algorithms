@@ -8,7 +8,7 @@ Write a function named getNames that, given an array of people objects, uses map
 For example:
 [
 {
-  name: 'lloyd',
+  name: 'lloyd',git ch
   age: 32,
   shoeSize: 12
 },
