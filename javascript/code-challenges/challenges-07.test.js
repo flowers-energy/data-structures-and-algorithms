@@ -135,7 +135,7 @@ const listFoods = (recipe) => {
     let withoutUnits = withoutAmounts.slice(withoutAmounts.indexOf(' ') + 1);
     result.push(withoutUnits);
   });
-  return result;cd
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
